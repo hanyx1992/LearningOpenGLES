@@ -1,11 +1,11 @@
 //
-//  ViewController.m
+//  FirstViewController.m
 //  demo
 //
 //  Created by 韩元旭 on 2020/10/2.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 #import <GLKit/GLKit.h>
 
 typedef struct {
@@ -13,7 +13,7 @@ typedef struct {
     GLKVector2 textureCoord;
 } SenceVertex;
 
-@interface ViewController () <GLKViewDelegate>
+@interface FirstViewController () <GLKViewDelegate>
 
 @property (nonatomic, strong) EAGLContext *context;
 @property (nonatomic, strong) GLKView *glView;
@@ -23,7 +23,7 @@ typedef struct {
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
