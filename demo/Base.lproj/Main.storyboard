@@ -66,7 +66,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="03.GLSL Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qGm-Dz-wc0">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="03.GLSL 渲染到纹理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qGm-Dz-wc0">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WLB-22-pHg" kind="show" id="4il-TA-Edu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="d4x-Hp-6cU" style="IBUITableViewCellStyleDefault" id="htY-2W-b1d">
+                                        <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="htY-2W-b1d" id="OOc-wD-2Sa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="04.GLSL Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d4x-Hp-6cU">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -137,6 +157,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYw-hL-ENZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="806" y="-135"/>
+        </scene>
+        <!--Texture View Controller-->
+        <scene sceneID="Ukt-AS-1u7">
+            <objects>
+                <viewController id="WLB-22-pHg" customClass="TextureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0c1-5d-Tb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-L0-dvM">
+                                <rect key="frame" x="48" y="806" width="318" height="31"/>
+                                <connections>
+                                    <action selector="handleSliderValueChanged:" destination="WLB-22-pHg" eventType="valueChanged" id="FAJ-ZY-Xpw"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-RD-Wij">
+                                <rect key="frame" x="48" y="768" width="318" height="31"/>
+                                <connections>
+                                    <action selector="handleSliderValueChanged:" destination="WLB-22-pHg" eventType="valueChanged" id="gjB-ef-7hv"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-FM-CS6">
+                                <rect key="frame" x="48" y="730" width="318" height="31"/>
+                                <connections>
+                                    <action selector="handleSliderValueChanged:" destination="WLB-22-pHg" eventType="valueChanged" id="OwT-Oc-MQu"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rf6-f0-yqA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rbB-RD-Wij" firstAttribute="leading" secondItem="Fib-L0-dvM" secondAttribute="leading" id="0Xd-sc-pFw"/>
+                            <constraint firstItem="rbB-RD-Wij" firstAttribute="top" secondItem="sdk-FM-CS6" secondAttribute="bottom" constant="8" id="Twe-1f-GY6"/>
+                            <constraint firstItem="Fib-L0-dvM" firstAttribute="top" secondItem="rbB-RD-Wij" secondAttribute="bottom" constant="8" id="Vm5-HY-TQ8"/>
+                            <constraint firstItem="rf6-f0-yqA" firstAttribute="bottom" secondItem="Fib-L0-dvM" secondAttribute="bottom" constant="26" id="aTJ-je-DF0"/>
+                            <constraint firstItem="sdk-FM-CS6" firstAttribute="trailing" secondItem="rbB-RD-Wij" secondAttribute="trailing" id="gNy-2y-NsO"/>
+                            <constraint firstItem="rbB-RD-Wij" firstAttribute="trailing" secondItem="Fib-L0-dvM" secondAttribute="trailing" id="hIW-tz-Ety"/>
+                            <constraint firstItem="rf6-f0-yqA" firstAttribute="trailing" secondItem="Fib-L0-dvM" secondAttribute="trailing" constant="50" id="hYv-tJ-XPF"/>
+                            <constraint firstItem="sdk-FM-CS6" firstAttribute="leading" secondItem="rbB-RD-Wij" secondAttribute="leading" id="hyv-Au-aLu"/>
+                            <constraint firstItem="Fib-L0-dvM" firstAttribute="leading" secondItem="rf6-f0-yqA" secondAttribute="leading" constant="50" id="zpW-2y-IXX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BKe-tz-z6u">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="Xpx-vV-OHJ">
+                            <connections>
+                                <action selector="handleSaveAction:" destination="WLB-22-pHg" id="8cf-Nz-zLF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="slider0" destination="sdk-FM-CS6" id="aJs-dr-ccg"/>
+                        <outlet property="slider1" destination="rbB-RD-Wij" id="t2B-AE-V4I"/>
+                        <outlet property="slider2" destination="Fib-L0-dvM" id="0Eg-Jb-u4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HB6-Fq-neB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="549.77678571428567"/>
         </scene>
     </scenes>
     <resources>

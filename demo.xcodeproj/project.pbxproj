@@ -18,6 +18,11 @@
 		91B09B0325270CC4007968C4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B0225270CC4007968C4 /* SecondViewController.m */; };
 		91B09B0625270CF6007968C4 /* second.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91B09B0525270CF6007968C4 /* second.vsh */; };
 		91B09B0925270D02007968C4 /* second.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91B09B0825270D02007968C4 /* second.fsh */; };
+		91B09B1125275F92007968C4 /* TextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B1025275F92007968C4 /* TextureViewController.m */; };
+		91B09B15252761CE007968C4 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91B09B14252761CE007968C4 /* joker.jpg */; };
+		91B09B1925276261007968C4 /* TextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B1825276261007968C4 /* TextureView.m */; };
+		91B09B1E25276BF6007968C4 /* VertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B1D25276BF6007968C4 /* VertexAttribArrayBuffer.m */; };
+		91B09B2225277BD1007968C4 /* GLSLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B2125277BD1007968C4 /* GLSLReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,15 @@
 		91B09B0225270CC4007968C4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		91B09B0525270CF6007968C4 /* second.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = second.vsh; sourceTree = "<group>"; };
 		91B09B0825270D02007968C4 /* second.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = second.fsh; sourceTree = "<group>"; };
+		91B09B0F25275F92007968C4 /* TextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureViewController.h; sourceTree = "<group>"; };
+		91B09B1025275F92007968C4 /* TextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureViewController.m; sourceTree = "<group>"; };
+		91B09B14252761CE007968C4 /* joker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joker.jpg; sourceTree = "<group>"; };
+		91B09B1725276261007968C4 /* TextureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureView.h; sourceTree = "<group>"; };
+		91B09B1825276261007968C4 /* TextureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureView.m; sourceTree = "<group>"; };
+		91B09B1C25276BF6007968C4 /* VertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		91B09B1D25276BF6007968C4 /* VertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		91B09B2025277BD1007968C4 /* GLSLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSLReader.h; sourceTree = "<group>"; };
+		91B09B2125277BD1007968C4 /* GLSLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 			children = (
 				9167D4612526DDF1002C56D6 /* 01.First */,
 				91B09B0025270CAB007968C4 /* 02.GLSL */,
+				91B09B0C25272A3E007968C4 /* 03.Texture */,
 				9167D4602526DDE4002C56D6 /* App */,
 			);
 			path = Classes;
@@ -122,6 +137,7 @@
 		91B09AF82527074A007968C4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				91B09B14252761CE007968C4 /* joker.jpg */,
 				91B09AF9252708CD007968C4 /* test.jpg */,
 			);
 			path = Images;
@@ -136,6 +152,21 @@
 				91B09B0825270D02007968C4 /* second.fsh */,
 			);
 			path = 02.GLSL;
+			sourceTree = "<group>";
+		};
+		91B09B0C25272A3E007968C4 /* 03.Texture */ = {
+			isa = PBXGroup;
+			children = (
+				91B09B0F25275F92007968C4 /* TextureViewController.h */,
+				91B09B1025275F92007968C4 /* TextureViewController.m */,
+				91B09B1725276261007968C4 /* TextureView.h */,
+				91B09B1825276261007968C4 /* TextureView.m */,
+				91B09B1C25276BF6007968C4 /* VertexAttribArrayBuffer.h */,
+				91B09B1D25276BF6007968C4 /* VertexAttribArrayBuffer.m */,
+				91B09B2025277BD1007968C4 /* GLSLReader.h */,
+				91B09B2125277BD1007968C4 /* GLSLReader.m */,
+			);
+			path = 03.Texture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +229,7 @@
 				9167D4502526DDCA002C56D6 /* Assets.xcassets in Resources */,
 				9167D44E2526DDCA002C56D6 /* Main.storyboard in Resources */,
 				91B09AFA252708CD007968C4 /* test.jpg in Resources */,
+				91B09B15252761CE007968C4 /* joker.jpg in Resources */,
 				91B09B0625270CF6007968C4 /* second.vsh in Resources */,
 				91B09B0925270D02007968C4 /* second.fsh in Resources */,
 			);
@@ -211,7 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B09B0325270CC4007968C4 /* SecondViewController.m in Sources */,
+				91B09B1E25276BF6007968C4 /* VertexAttribArrayBuffer.m in Sources */,
 				9167D44B2526DDCA002C56D6 /* FirstViewController.m in Sources */,
+				91B09B1125275F92007968C4 /* TextureViewController.m in Sources */,
+				91B09B2225277BD1007968C4 /* GLSLReader.m in Sources */,
+				91B09B1925276261007968C4 /* TextureView.m in Sources */,
 				9167D4452526DDCA002C56D6 /* AppDelegate.m in Sources */,
 				9167D4562526DDCA002C56D6 /* main.m in Sources */,
 				9167D4482526DDCA002C56D6 /* SceneDelegate.m in Sources */,
