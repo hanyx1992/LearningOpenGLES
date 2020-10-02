@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// 学习渲染到纹理
+// 资料: http://www.lymanli.com/2019/03/04/ios-opengles-spring/
 @interface TextureViewController : UIViewController
 
 @end
