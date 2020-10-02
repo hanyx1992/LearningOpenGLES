@@ -14,6 +14,7 @@
 		9167D4502526DDCA002C56D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9167D44F2526DDCA002C56D6 /* Assets.xcassets */; };
 		9167D4532526DDCA002C56D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9167D4512526DDCA002C56D6 /* LaunchScreen.storyboard */; };
 		9167D4562526DDCA002C56D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167D4552526DDCA002C56D6 /* main.m */; };
+		91B09AFA252708CD007968C4 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91B09AF9252708CD007968C4 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9167D4522526DDCA002C56D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9167D4542526DDCA002C56D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9167D4552526DDCA002C56D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91B09AF9252708CD007968C4 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +63,60 @@
 		9167D4422526DDCA002C56D6 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				9167D4432526DDCA002C56D6 /* AppDelegate.h */,
-				9167D4442526DDCA002C56D6 /* AppDelegate.m */,
-				9167D4462526DDCA002C56D6 /* SceneDelegate.h */,
-				9167D4472526DDCA002C56D6 /* SceneDelegate.m */,
-				9167D4492526DDCA002C56D6 /* ViewController.h */,
-				9167D44A2526DDCA002C56D6 /* ViewController.m */,
+				91B09AF82527074A007968C4 /* Images */,
+				9167D45E2526DDD2002C56D6 /* Resources */,
+				9167D45D2526DDCF002C56D6 /* Classes */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		9167D45D2526DDCF002C56D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9167D4602526DDE4002C56D6 /* App */,
+				9167D4612526DDF1002C56D6 /* New Group */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9167D45E2526DDD2002C56D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9167D44C2526DDCA002C56D6 /* Main.storyboard */,
 				9167D44F2526DDCA002C56D6 /* Assets.xcassets */,
 				9167D4512526DDCA002C56D6 /* LaunchScreen.storyboard */,
 				9167D4542526DDCA002C56D6 /* Info.plist */,
 				9167D4552526DDCA002C56D6 /* main.m */,
 			);
-			path = demo;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9167D4602526DDE4002C56D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9167D4432526DDCA002C56D6 /* AppDelegate.h */,
+				9167D4442526DDCA002C56D6 /* AppDelegate.m */,
+				9167D4462526DDCA002C56D6 /* SceneDelegate.h */,
+				9167D4472526DDCA002C56D6 /* SceneDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9167D4612526DDF1002C56D6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9167D4492526DDCA002C56D6 /* ViewController.h */,
+				9167D44A2526DDCA002C56D6 /* ViewController.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		91B09AF82527074A007968C4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				91B09AF9252708CD007968C4 /* test.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +178,7 @@
 				9167D4532526DDCA002C56D6 /* LaunchScreen.storyboard in Resources */,
 				9167D4502526DDCA002C56D6 /* Assets.xcassets in Resources */,
 				9167D44E2526DDCA002C56D6 /* Main.storyboard in Resources */,
+				91B09AFA252708CD007968C4 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +337,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H2RBN3WMR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GLES_SILENCE_DEPRECATION=1",
+					"DEBUG=1",
+				);
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H2RBN3WMR;
+				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
