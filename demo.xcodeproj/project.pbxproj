@@ -23,6 +23,22 @@
 		91B09B1925276261007968C4 /* TextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B1825276261007968C4 /* TextureView.m */; };
 		91B09B1E25276BF6007968C4 /* VertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B1D25276BF6007968C4 /* VertexAttribArrayBuffer.m */; };
 		91B09B2225277BD1007968C4 /* GLSLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B09B2125277BD1007968C4 /* GLSLReader.m */; };
+		91FCE69125285C36009628F9 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FCE69025285C36009628F9 /* FilterViewController.m */; };
+		91FCE69525285E82009628F9 /* TextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FCE69425285E82009628F9 /* TextureLoader.m */; };
+		91FCE69F252863C6009628F9 /* default.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE69D252863C6009628F9 /* default.fsh */; };
+		91FCE6A0252863C6009628F9 /* default.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE69E252863C6009628F9 /* default.vsh */; };
+		91FCE6A525286403009628F9 /* scale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6A325286403009628F9 /* scale.fsh */; };
+		91FCE6A625286403009628F9 /* scale.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6A425286403009628F9 /* scale.vsh */; };
+		91FCE6B125286A40009628F9 /* soul.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6AF25286A40009628F9 /* soul.vsh */; };
+		91FCE6B225286A40009628F9 /* soul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6B025286A40009628F9 /* soul.fsh */; };
+		91FCE6B725286CA8009628F9 /* shake.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6B625286CA8009628F9 /* shake.vsh */; };
+		91FCE6BB25286CBE009628F9 /* shake.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6BA25286CBE009628F9 /* shake.fsh */; };
+		91FCE6BF25286E63009628F9 /* blink.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6BE25286E63009628F9 /* blink.vsh */; };
+		91FCE6C325286E6C009628F9 /* blink.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6C225286E6C009628F9 /* blink.fsh */; };
+		91FCE6C725286FFE009628F9 /* glitch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6C625286FFE009628F9 /* glitch.vsh */; };
+		91FCE6CB25287004009628F9 /* glitch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6CA25287004009628F9 /* glitch.fsh */; };
+		91FCE6CF25287111009628F9 /* vertigo.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6CE25287111009628F9 /* vertigo.vsh */; };
+		91FCE6D325287126009628F9 /* vertigo.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 91FCE6D225287126009628F9 /* vertigo.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +68,24 @@
 		91B09B1D25276BF6007968C4 /* VertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		91B09B2025277BD1007968C4 /* GLSLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSLReader.h; sourceTree = "<group>"; };
 		91B09B2125277BD1007968C4 /* GLSLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLReader.m; sourceTree = "<group>"; };
+		91FCE68F25285C36009628F9 /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		91FCE69025285C36009628F9 /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		91FCE69325285E82009628F9 /* TextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		91FCE69425285E82009628F9 /* TextureLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureLoader.m; sourceTree = "<group>"; };
+		91FCE69D252863C6009628F9 /* default.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = default.fsh; sourceTree = "<group>"; };
+		91FCE69E252863C6009628F9 /* default.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = default.vsh; sourceTree = "<group>"; };
+		91FCE6A325286403009628F9 /* scale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.fsh; sourceTree = "<group>"; };
+		91FCE6A425286403009628F9 /* scale.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.vsh; sourceTree = "<group>"; };
+		91FCE6AF25286A40009628F9 /* soul.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soul.vsh; sourceTree = "<group>"; };
+		91FCE6B025286A40009628F9 /* soul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soul.fsh; sourceTree = "<group>"; };
+		91FCE6B625286CA8009628F9 /* shake.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shake.vsh; sourceTree = "<group>"; };
+		91FCE6BA25286CBE009628F9 /* shake.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shake.fsh; sourceTree = "<group>"; };
+		91FCE6BE25286E63009628F9 /* blink.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blink.vsh; sourceTree = "<group>"; };
+		91FCE6C225286E6C009628F9 /* blink.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blink.fsh; sourceTree = "<group>"; };
+		91FCE6C625286FFE009628F9 /* glitch.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = glitch.vsh; sourceTree = "<group>"; };
+		91FCE6CA25287004009628F9 /* glitch.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = glitch.fsh; sourceTree = "<group>"; };
+		91FCE6CE25287111009628F9 /* vertigo.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertigo.vsh; sourceTree = "<group>"; };
+		91FCE6D225287126009628F9 /* vertigo.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = vertigo.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +131,7 @@
 				9167D4612526DDF1002C56D6 /* 01.First */,
 				91B09B0025270CAB007968C4 /* 02.GLSL */,
 				91B09B0C25272A3E007968C4 /* 03.Texture */,
+				91FCE68E25285C22009628F9 /* 04.Filter */,
 				9167D4602526DDE4002C56D6 /* App */,
 			);
 			path = Classes;
@@ -169,6 +204,87 @@
 			path = 03.Texture;
 			sourceTree = "<group>";
 		};
+		91FCE68E25285C22009628F9 /* 04.Filter */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE69C252863AA009628F9 /* Default */,
+				91FCE6A2252863E7009628F9 /* Scale */,
+				91FCE6AE25286A40009628F9 /* SoulOut */,
+				91FCE6B525286C88009628F9 /* Shake */,
+				91FCE6BD25286E2F009628F9 /* Blink */,
+				91FCE6C525286FEB009628F9 /* Glitch */,
+				91FCE6CD252870FF009628F9 /* Vertigo */,
+				91FCE68F25285C36009628F9 /* FilterViewController.h */,
+				91FCE69025285C36009628F9 /* FilterViewController.m */,
+				91FCE69325285E82009628F9 /* TextureLoader.h */,
+				91FCE69425285E82009628F9 /* TextureLoader.m */,
+			);
+			path = 04.Filter;
+			sourceTree = "<group>";
+		};
+		91FCE69C252863AA009628F9 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE69E252863C6009628F9 /* default.vsh */,
+				91FCE69D252863C6009628F9 /* default.fsh */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		91FCE6A2252863E7009628F9 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6A425286403009628F9 /* scale.vsh */,
+				91FCE6A325286403009628F9 /* scale.fsh */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		91FCE6AE25286A40009628F9 /* SoulOut */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6AF25286A40009628F9 /* soul.vsh */,
+				91FCE6B025286A40009628F9 /* soul.fsh */,
+			);
+			path = SoulOut;
+			sourceTree = "<group>";
+		};
+		91FCE6B525286C88009628F9 /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6B625286CA8009628F9 /* shake.vsh */,
+				91FCE6BA25286CBE009628F9 /* shake.fsh */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
+		91FCE6BD25286E2F009628F9 /* Blink */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6BE25286E63009628F9 /* blink.vsh */,
+				91FCE6C225286E6C009628F9 /* blink.fsh */,
+			);
+			path = Blink;
+			sourceTree = "<group>";
+		};
+		91FCE6C525286FEB009628F9 /* Glitch */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6C625286FFE009628F9 /* glitch.vsh */,
+				91FCE6CA25287004009628F9 /* glitch.fsh */,
+			);
+			path = Glitch;
+			sourceTree = "<group>";
+		};
+		91FCE6CD252870FF009628F9 /* Vertigo */ = {
+			isa = PBXGroup;
+			children = (
+				91FCE6CE25287111009628F9 /* vertigo.vsh */,
+				91FCE6D225287126009628F9 /* vertigo.fsh */,
+			);
+			path = Vertigo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,13 +341,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FCE6B225286A40009628F9 /* soul.fsh in Resources */,
+				91FCE6A525286403009628F9 /* scale.fsh in Resources */,
 				9167D4532526DDCA002C56D6 /* LaunchScreen.storyboard in Resources */,
 				9167D4502526DDCA002C56D6 /* Assets.xcassets in Resources */,
+				91FCE6A0252863C6009628F9 /* default.vsh in Resources */,
 				9167D44E2526DDCA002C56D6 /* Main.storyboard in Resources */,
 				91B09AFA252708CD007968C4 /* test.jpg in Resources */,
+				91FCE6CF25287111009628F9 /* vertigo.vsh in Resources */,
+				91FCE6B125286A40009628F9 /* soul.vsh in Resources */,
+				91FCE6BF25286E63009628F9 /* blink.vsh in Resources */,
 				91B09B15252761CE007968C4 /* joker.jpg in Resources */,
+				91FCE6CB25287004009628F9 /* glitch.fsh in Resources */,
+				91FCE6C725286FFE009628F9 /* glitch.vsh in Resources */,
 				91B09B0625270CF6007968C4 /* second.vsh in Resources */,
+				91FCE6BB25286CBE009628F9 /* shake.fsh in Resources */,
+				91FCE6A625286403009628F9 /* scale.vsh in Resources */,
 				91B09B0925270D02007968C4 /* second.fsh in Resources */,
+				91FCE6C325286E6C009628F9 /* blink.fsh in Resources */,
+				91FCE6D325287126009628F9 /* vertigo.fsh in Resources */,
+				91FCE6B725286CA8009628F9 /* shake.vsh in Resources */,
+				91FCE69F252863C6009628F9 /* default.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,12 +374,14 @@
 			files = (
 				91B09B0325270CC4007968C4 /* SecondViewController.m in Sources */,
 				91B09B1E25276BF6007968C4 /* VertexAttribArrayBuffer.m in Sources */,
+				91FCE69125285C36009628F9 /* FilterViewController.m in Sources */,
 				9167D44B2526DDCA002C56D6 /* FirstViewController.m in Sources */,
 				91B09B1125275F92007968C4 /* TextureViewController.m in Sources */,
 				91B09B2225277BD1007968C4 /* GLSLReader.m in Sources */,
 				91B09B1925276261007968C4 /* TextureView.m in Sources */,
 				9167D4452526DDCA002C56D6 /* AppDelegate.m in Sources */,
 				9167D4562526DDCA002C56D6 /* main.m in Sources */,
+				91FCE69525285E82009628F9 /* TextureLoader.m in Sources */,
 				9167D4482526DDCA002C56D6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
